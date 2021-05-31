@@ -31,8 +31,8 @@ class Main extends Component {
                         render={() => <Menu />}
                     />
                     <Redirect to="/home" />
-                </Switch>
-                <Footer /> */}
+                </Switch>*/}
+                <Footer /> 
                 
             </div>
         );
