@@ -54,7 +54,7 @@ class Header extends Component {
 
   render() {
     return (
-      <React.Fragment className="header">
+      <React.Fragment>
         <Jumbotron fluid>
           <div className="container">
             <div className="row">
@@ -77,7 +77,7 @@ class Header extends Component {
             </NavbarBrand>
             <NavbarToggler onClick={this.toggleNav} />
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar>
+              <Nav className="menu-container" navbar>
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
                     <i className="fa fa-home fa-lg" /> Home
@@ -91,10 +91,16 @@ class Header extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink className="nav-link" to="/menu">
+                    <i className="fa fa-solid fa-bars"></i>
                     Menu
                   </NavLink>
                 </NavItem>
               </Nav>
+              <span className="navbar-text ml-auto">
+                <Button outline onClick={this.toggleModal}>
+                  <i className="fa fa-solid fa-user" /> Login
+                </Button>
+              </span>
             </Collapse>
           </div>
         </Navbar>
