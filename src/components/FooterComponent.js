@@ -41,15 +41,15 @@ function Footer(props) {
                     href="https://facebook.com/mimibvegansweets"
                     className="btn btn-social-icon btn-facebook"
                   >
-                    
-                  </a>
+                    <i className="fa fa-facebook"></i>
+                  </a>{' '}
                   <a
                     href="http://instagram.com/mimibvegansweets"
                     class="btn btn-social-icon btn-instagram"
                   >
+                    <i class="fa fa-instagram"></i>
                     <i class="icon-instagram"></i>
-                    <i class="icon-instagram"></i>
-                  </a>
+                  </a>{' '}
                   <a
                     href="mailto:mimibvegansweets@gmail.com"
                     class="social-icon si-borderless si-email3"

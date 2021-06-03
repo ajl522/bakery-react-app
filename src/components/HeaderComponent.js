@@ -67,7 +67,7 @@ class Header extends Component {
 
         <Navbar dark sticky="top" expand="md">
           <div className="container">
-            <NavbarBrand className="mr-lg-0 order-lg-2" href="/">
+            <NavbarBrand className="mr-lg-0 " href="/">
               <img
                 src="/assets/img/logo.PNG"
                 height="100"
@@ -97,7 +97,7 @@ class Header extends Component {
                 </NavItem>
               </Nav>
               <span className="navbar-text ml-auto">
-                <Button outline onClick={this.toggleModal}>
+                <Button outline className="logbtn" onClick={this.toggleModal}>
                   <i className="fa fa-solid fa-user" /> Login
                 </Button>
               </span>

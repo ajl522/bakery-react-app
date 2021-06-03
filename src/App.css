@@ -2,7 +2,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, .card-body>.card-title {
+h1,
+h2,
+h3,
+.card-body > .card-title {
   font-family: "Lobster", cursive;
 }
 
@@ -12,7 +15,7 @@ h1, h2, h3, .card-body>.card-title {
 }
 
 h2 {
-  color: #3046C5;
+  color: #3046c5;
 }
 
 .card-img-overlay .card-title {
@@ -26,7 +29,6 @@ h2 {
   min-height: 200px;
 }
 
-
 .jumbotron {
   margin: 0;
   padding: 30px;
@@ -35,12 +37,11 @@ h2 {
 }
 
 .jumbotron h2 {
-  color: #CEC8FF;
+  color: #cec8ff;
 }
 
 .navbar-dark {
   background: url("images/footer-bg.jpg") repeat center center / cover;
-
 }
 
 .site-footer {
@@ -48,4 +49,12 @@ h2 {
   background-size: auto 100%;
   padding: 20px 0 22px;
   color: lightgray;
+}
+
+.btn-instagram {
+  background-color: #ac2bac;
+}
+
+.logbtn {
+  background-color: #62016b;
 }
