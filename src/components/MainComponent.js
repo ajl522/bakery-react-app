@@ -7,17 +7,30 @@ import About from "./AboutComponent";
 import Menu from "./MenuComponent";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
+const mapStateToProps = (state) => {
+  return {
+    cakes: state.cakes,
+    cookies: state.cookies,
+    cupcakes: state.cupcakes,
+  };
+};
+
 class Main extends Component {
-    render() {
-        const HomePage = () => {
-            return (
-                <Home />
-            );
-        }
-        return (
-            <div>
-                <Header />
-                {/* <Switch>
+  render() {
+    const HomePage = () => {
+      return (
+        <Home
+          cake={this.props.cakes.filter((cake) => cake.featured)[0]}
+          cookie={this.props.cookies.filter((cookie) => cookie.featured)[0]}
+          cupcake={this.props.cupcakes.filter((cupcake) => cupcake.featured)[0]}
+        />
+      );
+    };
+
+    return (
+      <div>
+        <Header />
+        {/* <Switch>
                     <Route path="/home" component={HomePage} />
                     <Route exact path="/contactus" component={Contact} />
                     <Route
@@ -32,11 +45,10 @@ class Main extends Component {
                     />
                     <Redirect to="/home" />
                 </Switch> */}
-                <Footer /> 
-                
-            </div>
-        );
-    }
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default Main;

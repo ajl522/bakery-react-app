@@ -18,13 +18,13 @@ function Home(props) {
     <div className="container">
       <div className="row">
         <div className="col-md m-1">
-          <RenderCard item={props.cupcakes} />
+          <RenderCard item={props.cupcake} />
         </div>
         <div className="col-md m-1">
-          <RenderCard item={props.cookies} />
+          <RenderCard item={props.cookie} />
         </div>
         <div className="col-md m-1">
-          <RenderCard item={props.cakes} />
+          <RenderCard item={props.cake} />
         </div>
       </div>
     </div>
