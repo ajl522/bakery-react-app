@@ -87,7 +87,7 @@ const Menu = () => {
                 <TabPane className="tab-content" tabId="cupcakes">
                   <Row gutter="40">
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#">
                           <img
                             src="assets/img/redV.jpg"
@@ -95,17 +95,17 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">Red Velvet Cupcakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 12.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="">
                           <img
                             src="assets/img/vanilla.jpg"
@@ -113,17 +113,17 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">Vanilla Cupcakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 12.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/strawberry.jpg"
@@ -131,17 +131,17 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">Strawberry Cupcakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 12.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/images/items/desserts/3.jpg"
@@ -149,17 +149,17 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">Chocolate Cupcakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 12.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/aiCC.jpg"
@@ -167,17 +167,17 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">Alcohol Infused Cupcakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 18.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/lemon.jpeg"
@@ -185,17 +185,17 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">Lemon Cupcakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 12.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/2.jpg"
@@ -203,25 +203,25 @@ const Menu = () => {
                             className="portfolio-image"
                           />
                         </a>
-                        <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                        <CardTitle>
+                          <h3 className="mb-1">
                             <a href="#">
                               Cake Poppers{" "}
                               <i>
                                 <small>Mini Cupcakes</small>
                               </i>
                             </a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 10.00</div>
-                        </div>
-                      </div>
+                        </CardTitle>
+                      </Card>
                     </Col>
                   </Row>
                 </TabPane>
                 <TabPane className="tab-content" tabId="cookies">
                   <Row className="row gutter-40">
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/images/items/desserts/1.jpg"
@@ -230,16 +230,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Chocolate Chip Cookies</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 8.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/6.jpg"
@@ -248,16 +248,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Peanut Butter Cookies</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 8.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/sc.jpg"
@@ -266,16 +266,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Tea Cakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 8.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/9.jpg"
@@ -284,16 +284,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Blondies</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 10.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/Brownie.jpg"
@@ -302,19 +302,19 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Brownies</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 10.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
                   </Row>
                 </TabPane>
                 <TabPane className="tab-content" tabId="cakes">
                   <Row className="row gutter-40">
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/images/items/desserts/5.jpg"
@@ -323,16 +323,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Mini Bundt Cakes</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 20.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/cake.jpg"
@@ -341,16 +341,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Banana Nut Bread</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 15.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/img/lemonCake.jpeg"
@@ -359,16 +359,16 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Lemon Loaf Cake</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 15.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
 
                     <Col lg="3" md="6">
-                      <div className="portfolio-item">
+                      <Card body>
                         <a href="#" className="portfolio-image">
                           <img
                             src="assets/images/items/desserts/4.jpg"
@@ -377,12 +377,12 @@ const Menu = () => {
                           />
                         </a>
                         <div className="portfolio-desc pt-2">
-                          <h4 className="mb-1">
+                          <h3 className="mb-1">
                             <a href="#">Lemon Blueberry Loaf Cake</a>
-                          </h4>
+                          </h3>
                           <div className="item-price">$ 15.00</div>
                         </div>
-                      </div>
+                      </Card>
                     </Col>
                   </Row>
                 </TabPane>
