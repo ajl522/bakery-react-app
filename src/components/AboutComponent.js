@@ -7,14 +7,18 @@ const About = () => {
         <div class="content-wrap pb-0">
           <div class="container">
             <div class="heading-block border-bottom-0 bottommargin-sm">
-              <h2 class="font-secondary color nott">How We Work</h2>
+              <h2>How We Work</h2>
             </div>
 
             <div class="row col-mb-50">
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="feature-box media-box">
                   <div class="fbox-media">
-                    <img src="assets/images/icons/bowl.svg" alt="bowl Image" />
+                    <img
+                      src="assets/images/icons/bowl.svg"
+                      alt="bowl Image"
+                      className="mini-logos"
+                    />
                   </div>
                   <div class="fbox-content px-0">
                     <h3>Our Shop</h3>
@@ -27,12 +31,13 @@ const About = () => {
                 </div>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="feature-box media-box">
                   <div class="fbox-media">
                     <img
                       src="assets/images/icons/spoon.svg"
                       alt="spoon Image"
+                      className="mini-logos"
                     />
                   </div>
                   <div class="fbox-content px-0">
@@ -46,12 +51,13 @@ const About = () => {
                 </div>
               </div>
 
-              <div class="col-lg-4">
+              <div class="col-md-4">
                 <div class="feature-box media-box">
                   <div class="fbox-media">
                     <img
                       src="assets/images/icons/glass.svg"
                       alt="glass Image"
+                      className="mini-logos"
                     />
                   </div>
                   <div class="fbox-content px-0">
