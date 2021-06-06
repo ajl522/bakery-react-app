@@ -4,8 +4,8 @@ export const CUPCAKES = [
         name: "Red Velvet Cupcakes",
         image: "/assets/img/8.jpg",
         elevation: 42,
-        featured: true,
-        description: ""
+        featured: false,
+        description: "Cupcakes"
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ export const CUPCAKES = [
         image: "/assets/img/vanilla.jpg",
         elevation: 877,
         featured: false,
-        description: ""
+        description: "Cupcakes"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const CUPCAKES = [
         image: "/assets/img/strawberry.jpeg",
         elevation: 2901,
         featured: false,
-        description: ""
+        description: "Cupcakes"
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ export const CUPCAKES = [
         image: "/assets/img/3.jpg",
         elevation: 1233,
         featured: false,
-        description: ""
+        description: "Cupcakes"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const CUPCAKES = [
         image: "/assets/img/7.jpg",
         elevation: 1233,
         featured: false,
-        description: ""
+        description: "Cupcakes"
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ export const CUPCAKES = [
         image: "/assets/img/lemon.jpg",
         elevation: 1233,
         featured: false,
-        description: ""
+        description: "Cupcakes"
     },
     {
         id: 6,
@@ -53,6 +53,14 @@ export const CUPCAKES = [
         image: "/assets/img/2.jpg",
         elevation: 1233,
         featured: false,
-        description: ""
-    }
+        description: "Cupcakes"
+    }, 
+    {
+        id: 7,
+        name: "Custom Cupcakes",
+        image: "/assets/img/partyCupCake.jpg",
+        elevation: 1233,
+        featured: true,
+        description: "Cupcakes"
+    }, 
 ]

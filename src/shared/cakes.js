@@ -5,7 +5,7 @@ export const CAKES = [
         image: "/assets/img/5.jpg",
         elevation: 42,
         featured: true,
-        description: ""
+        description: "Cakes"
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ export const CAKES = [
         image: "/assets/img/cake.jpg",
         elevation: 877,
         featured: false,
-        description: ""
+        description: "Cakes"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export const CAKES = [
         image: "/assets/img/lemonCake.jpeg",
         elevation: 2901,
         featured: false,
-        description: ""
+        description: "Cakes"
     },
     {
         id: 3,
@@ -29,6 +29,6 @@ export const CAKES = [
         image: "/assets/img/4.jpg",
         elevation: 1233,
         featured: false,
-        description: ""
+        description: "Cakes"
     }
 ]
