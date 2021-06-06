@@ -1,8 +1,21 @@
-import React, {useState} from "react";
-import { Nav, NavItem, NavLink, TabContent, TabPane } from "reactstrap";
+import React, { useState } from "react";
+import {
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Card,
+  Button,
+  CardTitle,
+  CardText,
+  Row,
+  Col,
+} from "reactstrap";
+import { cupcakes } from "../shared/cupcakes";
 
 const Menu = () => {
-  const [activeTab, setActiveTab] = useState("1");
+  const [activeTab, setActiveTab] = useState("cupcakes");
 
   const toggle = (tab) => {
     if (activeTab !== tab) setActiveTab(tab);
@@ -25,40 +38,55 @@ const Menu = () => {
         <div className="content-wrap py-0">
           <div className="container">
             <div className="tabs tabs-justify" id="tab-1">
-              <Nav tabs className="tab-nav clearfix border-bottom-0">
-                <li>
-                  <a href="#tabs-cupcakes">
+              <Nav tabs>
+                <NavItem>
+                  <NavLink
+                    className={{ active: activeTab === "cupcakes" }}
+                    onClick={() => {
+                      toggle("cupcakes");
+                    }}
+                  >
                     <img
                       src="assets/images/icons/dessert.svg"
                       alt="Dessert Image"
                     />
                     Cupcakes
-                  </a>
-                </li>
-                <li>
-                  <a href="#tabs-cookies">
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={{ active: activeTab === "cookies" }}
+                    onClick={() => {
+                      toggle("cookies");
+                    }}
+                  >
                     <img
                       src="assets/images/icons/dessert.svg"
                       alt="Dessert Image"
                     />
                     Cookies
-                  </a>
-                </li>
-                <li>
-                  <a href="#tabs-cakes">
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={{ active: activeTab === "cakes" }}
+                    onClick={() => {
+                      toggle("cakes");
+                    }}
+                  >
                     <img
                       src="assets/images/icons/dessert.svg"
                       alt="Dessert Image"
                     />
                     Cakes
-                  </a>
-                </li>
+                  </NavLink>
+                </NavItem>
               </Nav>
 
-              <div className="tab-container mt-4">
-                <div className="tab-content" id="tabs-cupcakes">
-                  <div className="row gutter-40">
-                    <div className="col-lg-3 col-md-6">
+              <TabContent activeTab={activeTab}>
+                <TabPane className="tab-content" tabId="cupcakes">
+                  <Row gutter="40">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#">
                           <img
@@ -74,9 +102,9 @@ const Menu = () => {
                           <div className="item-price">$ 12.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="">
                           <img
@@ -92,9 +120,9 @@ const Menu = () => {
                           <div className="item-price">$ 12.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -110,9 +138,9 @@ const Menu = () => {
                           <div className="item-price">$ 12.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -128,9 +156,9 @@ const Menu = () => {
                           <div className="item-price">$ 12.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -146,9 +174,9 @@ const Menu = () => {
                           <div className="item-price">$ 18.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -164,9 +192,9 @@ const Menu = () => {
                           <div className="item-price">$ 12.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -187,12 +215,12 @@ const Menu = () => {
                           <div className="item-price">$ 10.00</div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-content" id="tabs-cookies">
-                  <div className="row gutter-40">
-                    <div className="col-lg-3 col-md-6">
+                    </Col>
+                  </Row>
+                </TabPane>
+                <TabPane className="tab-content" tabId="cookies">
+                  <Row className="row gutter-40">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -208,9 +236,9 @@ const Menu = () => {
                           <div className="item-price">$ 8.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -226,9 +254,9 @@ const Menu = () => {
                           <div className="item-price">$ 8.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -244,9 +272,9 @@ const Menu = () => {
                           <div className="item-price">$ 8.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -262,9 +290,9 @@ const Menu = () => {
                           <div className="item-price">$ 10.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -280,12 +308,12 @@ const Menu = () => {
                           <div className="item-price">$ 10.00</div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="tab-content" id="tabs-cakes">
-                  <div className="row gutter-40">
-                    <div className="col-lg-3 col-md-6">
+                    </Col>
+                  </Row>
+                </TabPane>
+                <TabPane className="tab-content" tabId="cakes">
+                  <Row className="row gutter-40">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -301,9 +329,9 @@ const Menu = () => {
                           <div className="item-price">$ 20.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -319,9 +347,9 @@ const Menu = () => {
                           <div className="item-price">$ 15.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -337,9 +365,9 @@ const Menu = () => {
                           <div className="item-price">$ 15.00</div>
                         </div>
                       </div>
-                    </div>
+                    </Col>
 
-                    <div className="col-lg-3 col-md-6">
+                    <Col lg="3" md="6">
                       <div className="portfolio-item">
                         <a href="#" className="portfolio-image">
                           <img
@@ -355,14 +383,14 @@ const Menu = () => {
                           <div className="item-price">$ 15.00</div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    </Col>
+                  </Row>
+                </TabPane>
+              </TabContent>
             </div>
           </div>
 
-          <div className="style2 mb-0 mt-3">
+          <div className="mb-0 mt-3">
             <div className="container">
               <div className="heading-block border-bottom-0 center bottommargin-sm">
                 <span className="font-primary ls1 color">Steps of Order</span>
@@ -373,13 +401,14 @@ const Menu = () => {
 
               <div className="clear"></div>
 
-              <div className="row mt-5 clearfix">
-                <div className="col-lg-4 col-sm-6 bottommargin-sm">
+              <Row className="mt-5 clearfix">
+                <Col lg="4" sm="6" className="bottommargin-sm">
                   <div className="feature-box media-box">
                     <div className="fbox-media">
                       <img
                         src="assets/images/icons/route.svg"
                         alt="map Image"
+                        className="mini-logos"
                       />
                     </div>
                     <div className="fbox-content px-0">
@@ -387,14 +416,15 @@ const Menu = () => {
                       <p>Add your items to the cart and place your order.</p>
                     </div>
                   </div>
-                </div>
+                </Col>
 
-                <div className="col-lg-4 col-sm-6 bottommargin-sm">
+                <Col lg="4" sm="6" className="bottommargin-sm">
                   <div className="feature-box media-box">
                     <div className="fbox-media">
                       <img
                         src="assets/images/icons/shop.svg"
                         alt="shop Image"
+                        className="mini-logos"
                       />
                     </div>
                     <div className="fbox-content px-0">
@@ -404,14 +434,15 @@ const Menu = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </Col>
 
-                <div className="col-lg-4 col-sm-6 bottommargin-sm">
+                <Col lg="4" sm="6" className="bottommargin-sm">
                   <div className="feature-box media-box">
                     <div className="fbox-media">
                       <img
                         src="assets/images/icons/delivery-bg.svg"
                         alt="delivery truck Image"
+                        className="mini-logos"
                       />
                     </div>
                     <div className="fbox-content px-0">
@@ -422,8 +453,8 @@ const Menu = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
+                </Col>
+              </Row>
             </div>
           </div>
 
@@ -443,8 +474,6 @@ const Menu = () => {
             </div>
           </div>
         </div>
-        {/* 
-<div style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 3; background: url('assets/images/sketch-header.png') repeat center bottom; background-size: auto 100%; height: 40px; margin-bottom: -10px;"></div> */}
       </section>
     </div>
   );
