@@ -4,22 +4,17 @@ const About = () => {
   return (
     <div>
       <div className="about">
-        <div class="content-wrap pb-0" >
+        <div class="content-wrap pb-0">
           <div class="container">
             <div class="heading-block border-bottom-0 bottommargin-sm">
-              <h2 class="font-secondary color nott" >
-                How We Work
-              </h2>
+              <h2 class="font-secondary color nott">How We Work</h2>
             </div>
 
             <div class="row col-mb-50">
               <div class="col-lg-4">
                 <div class="feature-box media-box">
-                  <div class="fbox-media" >
-                    <img
-                      src="demos/restaurant/images/icons/bowl.svg"
-                      alt="bowl Image"
-                    />
+                  <div class="fbox-media">
+                    <img src="assets/images/icons/bowl.svg" alt="bowl Image" />
                   </div>
                   <div class="fbox-content px-0">
                     <h3>Our Shop</h3>
@@ -34,9 +29,9 @@ const About = () => {
 
               <div class="col-lg-4">
                 <div class="feature-box media-box">
-                  <div class="fbox-media" >
+                  <div class="fbox-media">
                     <img
-                      src="demos/restaurant/images/icons/spoon.svg"
+                      src="assets/images/icons/spoon.svg"
                       alt="spoon Image"
                     />
                   </div>
@@ -53,9 +48,9 @@ const About = () => {
 
               <div class="col-lg-4">
                 <div class="feature-box media-box">
-                  <div class="fbox-media" >
+                  <div class="fbox-media">
                     <img
-                      src="demos/restaurant/images/icons/glass.svg"
+                      src="assets/images/icons/glass.svg"
                       alt="glass Image"
                     />
                   </div>
@@ -72,33 +67,21 @@ const About = () => {
             <div class="line mt-5"></div>
           </div>
 
-          <div
-            class="section about2 mb-0"
-          >
+          <div class="section about2 mb-0">
             <div class="container clearfix">
               <div class="heading-block center border-bottom-0">
-                <span
-                  class="font-primary ls1"
-                >
-                  Expert &amp; Skillful
-                </span>
-                <h3
-                  class="nott font-secondary ls0"
-                >
-                  Our Chefs
-                </h3>
+                <span class="font-primary ls1">Expert &amp; Skillful</span>
+                <h3 class="nott font-secondary ls0">Our Chefs</h3>
               </div>
 
               <div class="row clearfix">
                 <div class="col-lg-3 col-md-6">
                   <div class="team">
                     <div class="team-image imagescalein">
-                      <a href="demos/restaurant/about-us.html">
-                        <img
-                          src="demos/restaurant/images/chefs/1.jpg"
-                          alt="Michelle Barkers image"
-                        />
-                      </a>
+                      <img
+                        src="assets/images/chefs/1.jpg"
+                        alt="Michelle Barkers image"
+                      />
                     </div>
                     <div class="team-desc">
                       <div class="team-title">
@@ -127,29 +110,9 @@ const About = () => {
               </div>
             </div>
           </div>
-
-          <div class="section m-0 dark bg-color">
-            <div class="container">
-              <div class="row justify-content-between align-items-center">
-                <div class="col-md-10">
-                  <h3 class="mb-0 ls0">
-                    Do You want to Contact us. Then Don't Hesitate!
-                  </h3>
-                </div>
-                <div class="col-md-2">
-                  <a
-                    class="button button-circle button-xlarge text-dark bg-white button-light nott ls0 font-primary ml-0 mt-3 mt-md-0 "
-                    href="index.html#contact"
-                  >
-                    Contact Us Here
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
-        <div className='headerbg'></div>
+        <div className="headerbg"></div>
       </div>
     </div>
   );
