@@ -6,7 +6,7 @@ export const CAKES = [
         elevation: 42,
         featured: true,
         description: ""
-    }
+    },
     {
         id: 1,
         name: "Banana Nut Bread",
@@ -14,7 +14,7 @@ export const CAKES = [
         elevation: 877,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 2,
         name: "Lemon Loaf Cake",
@@ -22,7 +22,7 @@ export const CAKES = [
         elevation: 2901,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 3,
         name: "Lemon Blueberry Loaf Cake",

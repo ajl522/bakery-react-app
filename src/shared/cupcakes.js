@@ -6,7 +6,7 @@ export const CUPCAKES = [
         elevation: 42,
         featured: true,
         description: ""
-    }
+    },
     {
         id: 1,
         name: "Vanilla Cupcakes",
@@ -14,7 +14,7 @@ export const CUPCAKES = [
         elevation: 877,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 2,
         name: "Strawberry Cupcakes",
@@ -22,7 +22,7 @@ export const CUPCAKES = [
         elevation: 2901,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 3,
         name: "Chocolate Cupcakes",
@@ -30,7 +30,7 @@ export const CUPCAKES = [
         elevation: 1233,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 4,
         name: "Alcohol Infused Cupcakes",
@@ -38,7 +38,7 @@ export const CUPCAKES = [
         elevation: 1233,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 5,
         name: "Lemon Cupcakes",
@@ -46,7 +46,7 @@ export const CUPCAKES = [
         elevation: 1233,
         featured: false,
         description: ""
-    }
+    },
     {
         id: 6,
         name: "Cake Poppers",
